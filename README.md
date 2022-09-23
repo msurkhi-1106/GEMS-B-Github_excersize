@@ -4,12 +4,14 @@
 ### Brendan Zapf
 ### Jonathan Chou
 
-For this exercise, we have used 4 different sorting methods to sort an array of integers. The four features we have implemented are as follows:
+---
 
-#### Quick Sort
-#### Insertion Sort
-#### Bubble Sort
-#### Heap Sort
+#### For this exercise, we have used 4 different sorting methods to sort an array of integers. The four features we have implemented are as follows:
+
+* Quick Sort
+* Insertion Sort
+* Bubble Sort
+* Heap Sort
 
 We have also used JUnit tests to test my code to check whether the desired output is displayed, and both tests were successful, as can be seen in the video.
 
