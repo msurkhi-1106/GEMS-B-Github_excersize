@@ -36,7 +36,7 @@ public class heapSort{
             System.out.print(arr[i]+" ");
     }
     public static void main(String args[]){
-        //used this to test sort function, run Java to test
+        //used this to test sort function, run Java to test.
         int arr[] = {28,12,88,23,291,32,91,3};
   
         heapSort heap = new heapSort();
