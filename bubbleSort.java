@@ -25,6 +25,7 @@ class Main {
   public static void main(String args[]) {
       
     int[] arr = { 5, 80, 12, 15, -10 };
-   
+    Main.bubbleSort(arr);
+    System.out.println(Arrays.toString(arr));
   }
 }
