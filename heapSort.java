@@ -37,6 +37,7 @@ public class heapSort{
         System.out.println();
     }
     public static void main(String args[]){
+        //used this to test sort function
         int arr[] = {12, 11, 13, 5, 6, 7};
         int n = arr.length;
   
