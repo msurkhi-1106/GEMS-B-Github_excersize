@@ -22,5 +22,9 @@ class Main {
     }
   }
 
-  
+  public static void main(String args[]) {
+      
+    int[] arr = { 5, 80, 12, 15, -10 };
+   
+  }
 }
