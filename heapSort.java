@@ -1,50 +1,48 @@
 public class heapSort{
     public void sort(int arr[]){
-        int n = arr.length;
+        int x = arr.length;
 
-        for(int i=n/2-1; i>=0; i--)
-            heapify(arr,n,1);
+        for(int i=x/2-1; i>=0; i--)
+            heapify(arr,x,i);
 
-        for(int i=n-1; i>=0; i--){
-            int x = arr[0];
+        for(int i=x-1; i>=0; i--){
+            int y = arr[0];
             arr[0] = arr[i];
-            arr[i] = x;
+            arr[i] = y;
             heapify(arr,i,0);
         }
     }
     
-    void heapify(int arr[], int n, int i){
+    void heapify(int arr[],int x,int i){
         int max = i;
         int l = 2*i+1;
         int r = 2*i+2;
-        if (l < n && arr[l] > arr[max])
+        if (l < x && arr[l] > arr[max])
             max = l;
-        if (r < n && arr[r] > arr[max])
+        if (r < x && arr[r] > arr[max])
             max = r;
         if (max != i)
             {
                 int swap = arr[i];
                 arr[i] = arr[max];
                 arr[max] = swap;
-                heapify(arr, n, max); //recursion
+                heapify(arr, x, max); //recursion
             }
     }
 
     static void print(int arr[]){
-        int n = arr.length;
-        for (int i=0; i<n; ++i)
+        int l = arr.length;
+        for (int i=0; i<l; ++i)
             System.out.print(arr[i]+" ");
-        System.out.println();
     }
     public static void main(String args[]){
-        //used this to test sort function
-        int arr[] = {12, 11, 13, 5, 6, 7};
-        int n = arr.length;
+        //used this to test sort function, run Java to test
+        int arr[] = {28,12,88,23,291,32,91,3};
   
-        heapSort ob = new heapSort();
-        ob.sort(arr);
+        heapSort heap = new heapSort();
+        heap.sort(arr);
   
-        System.out.println("Sorted array is");
+        System.out.println("heap sorted array:");
         print(arr);
     }
 }
