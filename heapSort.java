@@ -9,7 +9,6 @@ public class heapSort{
             int x = arr[0];
             arr[0] = arr[i];
             arr[i] = x;
-
             heapify(arr,i,0);
         }
     }
@@ -27,21 +26,17 @@ public class heapSort{
                 int swap = arr[i];
                 arr[i] = arr[max];
                 arr[max] = swap;
-      
-                // Recursively heapify the affected sub-tree
-                heapify(arr, n, max);
+                heapify(arr, n, max); //recursion
             }
     }
 
-    static void print(int arr[])
-    {
+    static void print(int arr[]){
         int n = arr.length;
         for (int i=0; i<n; ++i)
             System.out.print(arr[i]+" ");
         System.out.println();
     }
-    public static void main(String args[])
-    {
+    public static void main(String args[]){
         int arr[] = {12, 11, 13, 5, 6, 7};
         int n = arr.length;
   
